@@ -32,7 +32,6 @@ document.getElementById("button").addEventListener("click", () => {
 });
 
 function details(id) {
-  console.log(id);
   fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
     .then((response) => response.json())
     .then((detail) => {
@@ -55,6 +54,14 @@ function details(id) {
                                 <li>${meal.strIngredient6}</li>
                                 <li>${meal.strIngredient7}</li>
                                 <li>${meal.strIngredient8}</li>
+                                <li>${meal.strIngredient9}</li>
+                                <li>${meal.strIngredient10}</li>
+                                <li>${meal.strIngredient11}</li>
+                                <li>${meal.strIngredient12}</li>
+                                <li>${meal.strIngredient13}</li>
+                                <li>${meal.strIngredient14}</li>
+                                <li>${meal.strIngredient15}</li>
+                                <li>${meal.strIngredient16}</li>
                                 </ul>  
                             </div>
                         </div>
